@@ -19,4 +19,6 @@ int main(int argc, char **argv){
 // compute if they are over, under , with in the data limit
 //shouuld inform them of how much if left if any and if they have any left how they can spread it out throught the remainder of the month
 //if theyve ran out tell them that
+
+
 }
