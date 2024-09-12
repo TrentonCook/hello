@@ -1,7 +1,7 @@
 /* Author: Trenton Cook
 0224-09-12
 
-air distance with lat and long
+data Plans for phones to see limits
 */
 
 #include <stdlib.h>
