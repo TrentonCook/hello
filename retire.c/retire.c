@@ -24,7 +24,7 @@ if(argc != 6) {
         printf("Error: Inputs cannot be less than 0\n");
                 exit(1);
         } else if(atof(argv[3]) > 1 || atof(argv[4]) > 1){
-        printf("Error: Inputs cannot be less than 0 or greater than 1\n");
+        printf("Error: Inputs (annual rate of return) (annual rate of inflation) cannot be less than 0 or greater than 1\n");
                 exit(1);
         }
 
