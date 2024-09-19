@@ -20,8 +20,8 @@ if(argc != 6) {
      } else if(atof(argv[1]) < 0 || atof(argv[2]) < 0 || atoi(argv[5]) < 0) {
         printf("Error: Inputs cannot be less than 0\n");
                 exit(1);
-        } else if(atof(argv[3]) < 0 || atof(argv[4]) < 0){
-            printf("Error: Inputs cannot be less than 0\n");
+        } else if((atof(argv[3]) < 0 || atof(argv[4]) < 0)) {
+            printf("Error: Inputs (annual rate of return) (annual rate of inflation) cannot be less than 0 or greater than 1\n");
                 exit(1);
         }
 
@@ -37,7 +37,7 @@ double monthlyRate = (((1 + annualRate)/(1 + annualInflate))-1)/12;
 // after the start bal * monthly rate = next intrest next bal is + intrest+ monthlyContrib
 
 printf("%lf , %lf, %lf, %lf, %d\n", startBal, monthlyContrib, annualRate, annualInflate, yearsUntil);
-printf("%lf,     %lf,       %lf        \n", monthlyRate, balance,interest);
+printf("%lf,\n", monthlyRate);
 
  return 0;
 }
