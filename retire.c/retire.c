@@ -17,10 +17,10 @@ if(argc != 6) {
         printf("ERROR: invalid data\n");
         printf("Correct data Input: (starting balance) (monthly contribution) (annual rate of return) (annual rate of inflation) (years until retirement)\n");
                 exit(1);
-     } else if(atof(argv[1]) < 0 || atof(argv[2]) < 0 || atof(argv[3]) < 0) {
+     } else if(atof(argv[1]) < 0 || atof(argv[2]) < 0 || atoi(argv[5]) < 0) {
         printf("Error: Inputs cannot be less than 0\n");
                 exit(1);
-        } else if(atof(argv[4]) < 0 || atoi(argv[5]) < 0){
+        } else if(atof(argv[3]) < 0 || atof(argv[4]) < 0){
             printf("Error: Inputs cannot be less than 0\n");
                 exit(1);
         }
